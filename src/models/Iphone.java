@@ -1,13 +1,17 @@
 package models;
 
 import infra.RepositorioMusic;
+import intefaces.AparelhoTelefonico;
+import intefaces.NavegadorInternet;
 import intefaces.ReprodutorMusical;
 
-public class Iphone  implements ReprodutorMusical{
+public class Iphone  implements ReprodutorMusical ,AparelhoTelefonico,NavegadorInternet {
 RepositorioMusic music;
 int idmusic=-1;
+Navegador navegador;
 public Iphone(){
    music= new RepositorioMusic();
+   navegador = new Navegador();
    
 }
     @Override
@@ -53,6 +57,36 @@ public Iphone(){
 
 
         this.reproduzirMusica();
+    }
+    @Override
+    public void navegarInternet(String url) {
+        // TODO Auto-generated method stub
+        navegador.navegarInternet(url);
+    }
+    @Override
+    public void abrirPaginaInicial() {
+        // TODO Auto-generated method stub
+       navegador.abrirPaginaInicial();
+    }
+    @Override
+    public void fecharNavegador() {
+        // TODO Auto-generated method stub
+        navegador.fecharNavegador();
+    }
+    @Override
+    public void fazerLigacao(String numero) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'fazerLigacao'");
+    }
+    @Override
+    public void receberLigacao(String numero) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'receberLigacao'");
+    }
+    @Override
+    public void encerrarLigacao() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'encerrarLigacao'");
     }
     
 }
