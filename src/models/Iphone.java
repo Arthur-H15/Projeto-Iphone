@@ -43,7 +43,7 @@ public Iphone(){
         System.out.println("proxima musica");
         this.reproduzirMusica();
         
-        // throw new UnsupportedOperationException("Unimplemented method 'avancarMusica'");
+    
     }
 
     @Override
@@ -95,6 +95,11 @@ public Iphone(){
     public void encerrarLigacao() {
         emLigacao=false;
         System.out.println("encerrando ligacão");
+        
+    }
+    @Override
+    public void selecionarMusica(String musica) {
+        System.out.println("selecionado " + musica);
         
     }
     
