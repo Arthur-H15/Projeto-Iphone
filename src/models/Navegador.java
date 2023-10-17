@@ -12,7 +12,7 @@ public class Navegador {
     }
 
     public void navegarInternet(String url) {
-        // TODO Auto-generated method stub
+        
         Site=url;
         System.out.println("abrindo pagina: " + url);
     }
@@ -20,14 +20,14 @@ public class Navegador {
     public void abrirPaginaInicial() {
         Site="";
         System.out.println("iniciando pagina Home   "  +Site);
-        // TODO Auto-generated method stub
+        
         throw new UnsupportedOperationException("Unimplemented method 'abrirPaginaInicial'");
     }
 
     public void fecharNavegador() {
         aberto=false;
         System.out.println("fechando navegador");
-        // TODO Auto-generated method stub
+        
         throw new UnsupportedOperationException("Unimplemented method 'fecharNavegador'");
     }
 

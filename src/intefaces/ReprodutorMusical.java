@@ -6,5 +6,6 @@ public interface ReprodutorMusical  {
     void pausarMusica(); 
     void avancarMusica(); 
     void voltarMusica(); 
+    void selecionarMusica(String musica); 
     
 }
