@@ -9,6 +9,7 @@ public class Iphone  implements ReprodutorMusical ,AparelhoTelefonico,NavegadorI
 RepositorioMusic music;
 int idmusic=-1;
 Navegador navegador;
+boolean emLigacao = false;
 public Iphone(){
    music= new RepositorioMusic();
    navegador = new Navegador();
@@ -41,13 +42,13 @@ public Iphone(){
         idmusic += 1;
         System.out.println("proxima musica");
         this.reproduzirMusica();
-        // TODO Auto-generated method stub
+        
         // throw new UnsupportedOperationException("Unimplemented method 'avancarMusica'");
     }
 
     @Override
     public void voltarMusica() {
-        // // TODO Auto-generated method stub
+        // 
         // throw new UnsupportedOperationException("Unimplemented method 'voltarMusica'");
        if(idmusic>1) {
         idmusic -= 1;
@@ -60,33 +61,41 @@ public Iphone(){
     }
     @Override
     public void navegarInternet(String url) {
-        // TODO Auto-generated method stub
+        
         navegador.navegarInternet(url);
     }
     @Override
     public void abrirPaginaInicial() {
-        // TODO Auto-generated method stub
+        
        navegador.abrirPaginaInicial();
     }
     @Override
     public void fecharNavegador() {
-        // TODO Auto-generated method stub
+        
         navegador.fecharNavegador();
     }
     @Override
     public void fazerLigacao(String numero) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'fazerLigacao'");
+        if(emLigacao) System.out.println("ja esta em ligacao");
+        else{
+            emLigacao=true;
+            System.out.println("ligando para " + numero);
+
+        
+        }
+        
     }
     @Override
     public void receberLigacao(String numero) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'receberLigacao'");
+        
+                System.out.println("recebendo ligacão do  " + numero);
+
     }
     @Override
     public void encerrarLigacao() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'encerrarLigacao'");
+        emLigacao=false;
+        System.out.println("encerrando ligacão");
+        
     }
     
 }
