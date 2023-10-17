@@ -102,5 +102,17 @@ public Iphone(){
         System.out.println("selecionado " + musica);
         
     }
+    @Override
+    public void iniciarCorrerioVoz() {
+       System.out.println("iniciando  correio de voz");
+    }
+    @Override
+    public void adicionarNovaAba() {
+        System.out.println("adicionando nova aba");
+    }
+    @Override
+    public void atualizarPagina() {
+        System.out.println("atualizando pagina");
+    }
     
 }
