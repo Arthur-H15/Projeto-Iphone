@@ -20,4 +20,12 @@ Lembre-se de que a estrutura do projeto e os detalhes de implementação podem v
 
 Espero que este repositório ajude a compreender como aplicar os conceitos de modelagem UML e programação orientada a objetos na prática, criando uma representação funcional das funcionalidades de um iPhone. Sinta-se à vontade para explorar o código-fonte e o diagrama UML para obter mais detalhes.
 
-Para qualquer dúvida ou esclarecimento, fique à vontade para entrar em contato.
+# Contato
+
+Se tiver alguma dúvida, sugestão ou precisar de assistência adicional, não hesite em entrar em contato. Estou à disposição para ajudar e esclarecer quaisquer questões relacionadas a este projeto.
+
+**Nome:** Arthur Henrique
+**E-mail:** Arthurhfs47@gmail.com
+**LinkedIn:** https://www.linkedin.com/in/arthur-henrique-ferreira-da-silva-476299179/
+
+Fique à vontade para me contatar por qualquer um dos meios acima, e responderei o mais breve possível. Se preferir, você pode abrir uma "Issue" neste repositório para discutir problemas específicos relacionados ao código ou aos diagramas UML.
